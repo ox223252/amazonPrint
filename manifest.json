@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "amazonPrint",
+	"version": "1.0",
+
+	"description": "permet d'imprimer une page Amazon simplement avec les données essentielles",
+	"homepage_url": "https://github.com/ox223252/amazonPrint.git",
+
+	"icons": {
+		"96": "icons/aPrint.svg",
+		"48": "icons/aPrint.svg",
+		"36": "icons/aPrint.svg"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.amazon.fr/*"],
+			"js": ["amazonPrint.js"],
+			"css":["amazonPrint.css"]
+		}
+	]
+}

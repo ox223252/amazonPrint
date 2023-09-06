@@ -1,0 +1,36 @@
+@media print {
+	#a-page, #rhf, #navFooter {
+		display: none !important;
+	}
+	body {
+		text-align: center;
+	}
+	#b-page {
+		text-align: justify;
+		width: 17cm;
+		display: flex;
+		flex-direction: column;
+		border: 1px solid black;
+		padding: 10px;
+	}
+	#b-page > h1 {
+		overflow: hidden;
+	}
+	#b-page > section {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	#b-page> section img {
+		max-width:150px;
+		max-height:150px;
+	}
+}
+@media screen {
+	#b-page {
+		display: none;
+	}
+}
+@page {
+	margin: 2cm;
+}
