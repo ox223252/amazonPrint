@@ -43,7 +43,7 @@
 		div.appendChild ( title );
 		title.innerHTML = document.getElementById ( "productTitle" ).innerHTML;
 	}catch ( e ) {
-		msg.innerHTML += "h1 " + e;
+		msg.innerHTML += document.createTextNode ( "h1 " + e );
 	}
 
 	let section = document.createElement ( "section" );
@@ -54,7 +54,7 @@
 		section.appendChild ( img );
 		img.src = document.getElementById ( "landingImage" ).src;
 	}catch ( e ) {
-		msg.innerHTML += "img " + e;
+		msg.innerHTML += document.createTextNode ( "img " + e );
 	}
 
 	try{
@@ -62,7 +62,7 @@
 		section.appendChild ( price );
 		price.innerHTML = document.getElementById ( "priceValue" ).value + "€";
 	}catch ( e ) {
-		msg.innerHTML += "price " + e;
+		msg.innerHTML += document.createTextNode ( "price " + e );
 	}
 
 	try{
@@ -70,7 +70,7 @@
 		section.appendChild ( qr );
 		qr.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+encodeURI ( window.location.origin+window.location.pathname );
 	}catch ( e ) {
-		msg.innerHTML += "qr " + e;
+		msg.innerHTML += document.createTextNode ( "qr " + e );
 	}
 
 	// console.log ( document.getElementById ( "nav-tools" ) );
