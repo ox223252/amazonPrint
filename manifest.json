@@ -3,7 +3,7 @@
 	"name": "amazonPrint",
 	"version": "1.0",
 
-	"description": "permet d'imprimer une page Amazon simplement avec les données essentielles",
+	"description": "permet d'imprimer une page produit Amazon simplement avec les données essentielles, photo principale, prix, nom et Qr code contenant l'url de la page",
 	"homepage_url": "https://github.com/ox223252/amazonPrint.git",
 
 	"icons": {
